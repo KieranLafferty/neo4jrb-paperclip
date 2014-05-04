@@ -11,9 +11,9 @@ Gem::Specification.new do |gem|
   gem.summary     = 'Neo4jrb::Paperclip enables you to use Paperclip with Neo4j.rb'
   gem.description = 'Neo4jrb::Paperclip enables you to use Paperclip with Neo4j.rb'
 
-  gem.files         = %x[git ls-files].split("\n")
-  gem.test_files    = %x[git ls-files -- {spec}/*].split("\n")
-  gem.require_path  = 'lib'
+  gem.files         = 'git ls-files'.split("\n")
+  gem.test_files    = 'git ls-files -- {test,spec,features}/*'.split("\n")
+  gem.require_path  = ["lib"]
 
   gem.add_dependency 'paperclip'
 
