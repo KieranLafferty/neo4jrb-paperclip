@@ -101,11 +101,11 @@ module Neo4jrb
 
         ##
         # Define the necessary collection fields in Mongoid for Paperclip
-        field(:"#{field}_file_name",    :type => String)
-        field(:"#{field}_content_type", :type => String)
-        field(:"#{field}_file_size",    :type => Integer)
-        field(:"#{field}_updated_at",   :type => DateTime)
-        field(:"#{field}_fingerprint",  :type => String)
+        property :"#{field}_file_name",    :type => String
+        property :"#{field}_content_type", :type => String
+        property :"#{field}_file_size",    :type => Integer
+        property :"#{field}_updated_at",   :type => DateTime
+        property :"#{field}_fingerprint",  :type => String
       end
 
       ##
