@@ -51,7 +51,7 @@ end
 #  field :avatar_updated_at,   :type => DateTime
 #  field :avatar_fingerprint,  :type => String
 #
-module Mongoid
+module Neo4jrb 
   module Paperclip
 
     ##
