@@ -8,12 +8,12 @@ end
 ##
 # mongoid criteria uses a different syntax.
 module Paperclip
-  
-  class << self
-    def logger
-      Neo4j::Config[:logger]
-    end
-  end
+  # 
+  # class << self
+  #   def logger
+  #     Neo4j::Config[:logger]
+  #   end
+  # end
   
   module Helpers
     def each_instance_with_attachment(klass, name)
